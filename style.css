@@ -1,0 +1,85 @@
+body {
+  background: hsl(0, 0%, 86%);
+  font-family: "Poppins", sans-serif;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box {
+  padding: 50px;
+  background: white;
+  border-radius: 15px 15px 85px 15px;
+  width: 655px;
+  height: 400px;
+}
+
+form {
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(0, 0%, 8%);
+}
+
+
+#allInputs {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+input[type="number"] {
+  padding: 10px;
+  width: 100px;
+  font-size: 20px;
+  font-weight: 500;
+  color: hsl(0, 1%, 44%);
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+.labelRed {
+  color: hsl(0, 100%, 67%);
+  visibility: hidden;
+  font-size: 12px;
+}
+.errorMode form {
+  color: hsl(0, 100%, 67%);
+}
+.errorMode input[type="number"] {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+.errorMode .labelRed {
+  visibility: visible;
+}
+
+hr {
+  flex: 1;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+#extra {
+  display: flex;
+  align-items: center;
+  margin-bottom: -40px;
+}
+
+#submitButton {
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  height: 80px;
+  width: 80px;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+}
+
+p {
+  font-weight: 900;
+  font-size: 80px;
+  font-style: italic;
+  line-height: 10px;
+}
+#yearSpan,
+#monthSpan,
+#daySpan {
+  color: hsl(259, 100%, 65%);
+}

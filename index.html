@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div id="box">
+        <form>
+          <div id="allInputs">
+            <div class="form-group">
+              <label for="DayLabel">DAY</label><br />
+              <input
+                type="number"
+                id="DayInput"
+                name="Day"
+                placeholder="DD"
+              /><br />
+              <label for="LabelRed" class="labelRed">Must be a valid day</label
+              ><br />
+            </div>
+
+            <div class="form-group">
+              <label for="MonthLabel">MONTH</label><br />
+              <input
+                type="number"
+                id="MonthInput"
+                name="Month"
+                placeholder="MM"
+              /><br />
+              <label for="LabelRed" class="labelRed"
+                >Must be a valid month</label
+              ><br />
+            </div>
+
+            <div class="form-group">
+              <label for="YearLabel">YEAR</label><br />
+              <input
+                type="number"
+                id="YearInput"
+                name="Year"
+                placeholder="YYYY"
+              /><br />
+              <label for="LabelRed" class="labelRed">Must be a past year</label><br />
+            </div>
+          </div>
+
+          <div id="extra">
+            <hr />
+            <input type="submit" id="submitButton" value="↓" />
+          </div>
+        </form>
+
+        <p><span id="yearSpan">- -</span> years</p>
+        <p><span id="monthSpan">- -</span> months</p>
+        <p><span id="daySpan">- -</span> days</p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
